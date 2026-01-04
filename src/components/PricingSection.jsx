@@ -68,8 +68,8 @@ export default function PricingSection() {
               key={lang.code}
               onClick={() => changeLanguage(lang.code)}
               className={`px-3 py-1.5 rounded-xl text-xs font-bold transition-all ${i18n.language === lang.code
-                  ? 'bg-blue-600 text-white shadow-md shadow-blue-200'
-                  : 'text-slate-600 hover:bg-slate-100'
+                ? 'bg-blue-600 text-white shadow-md shadow-blue-200'
+                : 'text-slate-600 hover:bg-slate-100'
                 }`}
             >
               {lang.label}
@@ -141,7 +141,7 @@ export default function PricingSection() {
 
             <div className="mb-8">
               <div className="flex items-baseline gap-1">
-                <span className="text-4xl font-black text-slate-900">${price(19)}</span>
+                <span className="text-4xl font-black text-slate-900">${price(39)}</span>
                 <span className="text-slate-500 font-medium">{yearly ? t('pricing.perYear') : t('pricing.perMonth')}</span>
               </div>
             </div>
@@ -189,7 +189,7 @@ export default function PricingSection() {
 
             <div className="mb-8">
               <div className="flex items-baseline gap-1">
-                <span className="text-4xl font-black text-slate-900">${price(39)}</span>
+                <span className="text-4xl font-black text-slate-900">${price(59)}</span>
                 <span className="text-slate-500 font-medium">{yearly ? t('pricing.perYear') : t('pricing.perMonth')}</span>
               </div>
             </div>
