@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Inter:wght@100..900&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+    --font-cairo: "Cairo", sans-serif;
+    --font-inter: "Inter", sans-serif;
+
+    --color-primary: #2563eb;
+    --color-primary-dark: #1e40af;
+    --color-accent: #f59e0b;
+}
+
+@layer base {
+    :root {
+        font-family: 'Inter', 'Cairo', system-ui, -apple-system, sans-serif;
+        direction: rtl;
+    }
+}
+
+@layer components {
+    body {
+        @apply bg-slate-50 text-slate-900 antialiased;
+    }
+
+    .glass-card {
+        @apply bg-white/80 backdrop-blur-md border border-white/20 shadow-xl transition-all duration-300;
+    }
+
+    .gradient-border {
+        position: relative;
+        background: linear-gradient(white, white) padding-box,
+            linear-gradient(to right, #2563eb, #9333ea) border-box;
+        border: 2px solid transparent;
+    }
+}
